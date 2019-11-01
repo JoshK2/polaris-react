@@ -12,6 +12,8 @@
 
 ### Documentation
 
+- Added a Kitchen Sink example to Storybook ([#2402](https://github.com/Shopify/polaris-react/pull/2402))
+
 ### Development workflow
 
 - Enabled maintainers running `yarn dev` to hide [`yarn splash`](https://github.com/Shopify/polaris-react/tree/master/scripts/splash) reports from the console by running `DISABLE_SPLASH=1 yarn dev` ([#2372](https://github.com/Shopify/polaris-react/pull/2372))
