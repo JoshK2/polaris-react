@@ -8,6 +8,8 @@
 
 ### Bug fixes
 
+- Fixed `merge` mutating its arguments ([#2317](https://github.com/Shopify/polaris-react/pull/2317))
+
 ### Documentation
 
 ### Development workflow
