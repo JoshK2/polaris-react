@@ -16,6 +16,10 @@ $item-spacing: spacing(tight);
   margin-left: (-1 * $item-spacing);
 }
 
+.Reverse {
+  flex-direction: row-reverse;
+}
+
 .Item {
   margin-top: $item-spacing;
   margin-left: $item-spacing;

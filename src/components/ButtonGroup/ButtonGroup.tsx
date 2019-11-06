@@ -13,6 +13,8 @@ export interface ButtonGroupProps {
   connectedTop?: boolean;
   /** Button components */
   children?: React.ReactNode;
+  //* Reverse the visual order of the buttons while maintaining DOM order */
+  reverse?: boolean;
 }
 
 export function ButtonGroup({
@@ -20,12 +22,14 @@ export function ButtonGroup({
   segmented,
   fullWidth,
   connectedTop,
+  reverse = false,
 }: ButtonGroupProps) {
   const className = classNames(
     styles.ButtonGroup,
     segmented && styles.segmented,
     fullWidth && styles.fullWidth,
     connectedTop && styles.connectedTop,
+    reverse && styles.Reverse,
   );
 
   const contents = elementChildren(children).map((child, index) => (

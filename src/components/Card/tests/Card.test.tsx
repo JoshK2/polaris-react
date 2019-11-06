@@ -4,7 +4,15 @@ import {
   trigger,
   findByTestID,
 } from 'test-utilities/legacy';
-import {Card, Badge, Button, Popover, ActionList} from 'components';
+import {mountWithApp} from 'test-utilities';
+import {
+  Card,
+  Badge,
+  Button,
+  ButtonGroup,
+  Popover,
+  ActionList,
+} from 'components';
 import {WithinContentContext} from '../../../utilities/within-content-context';
 import {Section} from '../components';
 
@@ -72,6 +80,44 @@ describe('<Card />', () => {
 
     expect(card.find(Button)).toHaveLength(1);
     expect(card.find(Card.Header)).toHaveLength(1);
+  });
+
+  describe('footerActionAlignment prop', () => {
+    it('renders right-aligned if not supplied', () => {
+      const card = mountWithApp(
+        <Card primaryFooterAction={{content: 'test action'}}>
+          <p>Some card content.</p>
+        </Card>,
+      );
+
+      expect(card).toContainReactComponent(ButtonGroup, {reverse: true});
+    });
+
+    it('renders right-aligned if set to "right"', () => {
+      const card = mountWithApp(
+        <Card
+          primaryFooterAction={{content: 'test action'}}
+          footerActionAlignment="right"
+        >
+          <p>Some card content.</p>
+        </Card>,
+      );
+
+      expect(card).toContainReactComponent(ButtonGroup, {reverse: true});
+    });
+
+    it('renders left-aligned if set to "left"', () => {
+      const card = mountWithApp(
+        <Card
+          primaryFooterAction={{content: 'test action'}}
+          footerActionAlignment="left"
+        >
+          <p>Some card content.</p>
+        </Card>,
+      );
+
+      expect(card).toContainReactComponent(ButtonGroup, {reverse: false});
+    });
   });
 
   it('renders a primary footer action', () => {
