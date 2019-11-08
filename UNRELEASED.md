@@ -10,7 +10,8 @@
 
 ### Bug fixes
 
-- Fixed an issue where types were not generated for a JSON config file [#2361](https://github.com/Shopify/polaris-react/pull/2361))
+- Fixed an issue where types were not generated for a JSON config file ([#2361](https://github.com/Shopify/polaris-react/pull/2361))
+- Added the top bar height to the `Topbar` in `Frame` to ensure the `Sticky` components get the correct top position ([2415](https://github.com/Shopify/polaris-react/pull/2415))
 
 ### Documentation
 
