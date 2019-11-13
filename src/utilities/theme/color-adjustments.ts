@@ -5,8 +5,8 @@ export enum UNSTABLE_Color {
   Surface = '#FAFAFA',
   DarkSurface = '#111213',
   OnSurface = '#1F2225',
-  Interactive = '#0870D9',
-  Neutral = '#EAEAEB',
+  Interactive = '#2E72D2',
+  Neutral = '#e7eaec',
   Branded = '#008060',
   Critical = '#D82C0D',
   Warning = '#FFC453',
@@ -18,7 +18,7 @@ export const colorAdjustments: ColorAdjustments = {
   surface: {baseColor: 'surface', light: {}, dark: {}},
   surfaceBackground: {
     baseColor: 'surface',
-    light: {lightness: 97.9},
+    light: {lightness: 98.3},
     dark: {lightness: 3.3},
   },
   surfaceInverseBackground: {
@@ -39,7 +39,7 @@ export const colorAdjustments: ColorAdjustments = {
   surfaceForeground: {
     baseColor: 'surface',
     light: {lightness: 100},
-    dark: {lightness: 8.8},
+    dark: {lightness: 12.7},
   },
   surfaceInverseForeground: {
     baseColor: 'surface',
@@ -145,7 +145,7 @@ export const colorAdjustments: ColorAdjustments = {
   borderSubduedOnSurface: {
     baseColor: 'onSurface',
     light: {lightness: 85},
-    dark: {lightness: 15},
+    dark: {lightness: 32},
   },
   iconOnInverse: {
     baseColor: 'onSurface',
@@ -195,7 +195,7 @@ export const colorAdjustments: ColorAdjustments = {
   textDisabledOnSurface: {
     baseColor: 'onSurface',
     light: {lightness: 61.3},
-    dark: {lightness: 50},
+    dark: {lightness: 47.2},
   },
   textSubduedOnInverse: {
     baseColor: 'onSurface',
@@ -205,7 +205,7 @@ export const colorAdjustments: ColorAdjustments = {
   textSubduedOnSurface: {
     baseColor: 'onSurface',
     light: {lightness: 38},
-    dark: {lightness: 62},
+    dark: {lightness: 65.1},
   },
   actionOnDark: {
     baseColor: 'onSurface',
@@ -340,8 +340,8 @@ export const colorAdjustments: ColorAdjustments = {
   interactive: {baseColor: 'interactive', light: {}, dark: {}},
   interactiveAction: {
     baseColor: 'interactive',
-    light: {lightness: 44},
-    dark: {lightness: 65},
+    light: {lightness: 48.6},
+    dark: {lightness: 65, saturation: 68},
   },
   interactiveActionDisabled: {
     baseColor: 'interactive',
@@ -392,17 +392,17 @@ export const colorAdjustments: ColorAdjustments = {
   neutralAction: {
     baseColor: 'neutral',
     light: {lightness: 93},
-    dark: {lightness: 22},
+    dark: {lightness: 32},
   },
   neutralActionHovered: {
     baseColor: 'neutral',
     light: {lightness: 90},
-    dark: {lightness: 25},
+    dark: {lightness: 37},
   },
   neutralActionPressed: {
     baseColor: 'neutral',
     light: {lightness: 87},
-    dark: {lightness: 39},
+    dark: {lightness: 42},
   },
   branded: {baseColor: 'branded', light: {}, dark: {}},
   brandedAction: {
@@ -498,8 +498,8 @@ export const colorAdjustments: ColorAdjustments = {
   },
   criticalText: {
     baseColor: 'critical',
-    light: {lightness: 40},
-    dark: {lightness: 60},
+    light: {lightness: 47.3},
+    dark: {lightness: 65, saturation: 70},
   },
   criticalActionDisabled: {
     baseColor: 'critical',
@@ -519,7 +519,7 @@ export const colorAdjustments: ColorAdjustments = {
   criticalActionPressed: {
     baseColor: 'critical',
     light: {lightness: 37.5},
-    dark: {lightness: 60},
+    dark: {lightness: 55},
   },
   criticalLink: {
     baseColor: 'critical',
@@ -616,8 +616,8 @@ export const colorAdjustments: ColorAdjustments = {
   },
   successText: {
     baseColor: 'success',
-    light: {lightness: 40},
-    dark: {lightness: 60},
+    light: {lightness: 47.3},
+    dark: {lightness: 65, saturation: 70},
   },
   backdrop: {
     baseColor: 'surface',
