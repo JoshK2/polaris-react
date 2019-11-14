@@ -44,8 +44,8 @@ export interface ButtonProps {
   pressed?: boolean;
   /** Allows the button to grow to the width of its container */
   fullWidth?: boolean;
-  /** Displays the button with a disclosure icon */
-  disclosure?: boolean;
+  /** Displays the button with a disclosure icon. Defaults to `down` when set to true */
+  disclosure?: 'down' | 'up' | boolean;
   /** Allows the button to submit a form */
   submit?: boolean;
   /** Renders a button that looks like a link */
@@ -150,7 +150,14 @@ export function Button({
 
   const disclosureIconMarkup = disclosure ? (
     <IconWrapper>
-      <Icon source={loading ? 'placeholder' : CaretDownMinor} />
+      <div
+        className={classNames(
+          styles.DisclosureIcon,
+          disclosure === 'up' && styles.DisclosureIconFacingUp,
+        )}
+      >
+        <Icon source={loading ? 'placeholder' : CaretDownMinor} />
+      </div>
     </IconWrapper>
   ) : null;
 
