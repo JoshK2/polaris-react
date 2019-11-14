@@ -190,5 +190,24 @@
     "hsluv": "^0.0.3",
     "lodash": "^4.17.4",
     "tslib": "^1.9.3"
+  },
+  "bit": {
+    "env": {
+      "compiler": "joshk.envs/compilers/typescript@3.0.36"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "overrides": {
+      "*": {
+        "devDependencies": {
+          "@types/node": "+"
+        }
+      },
+      "styles": {
+        "env": {
+          "compiler": "-"
+        }
+      }
+    }
   }
 }
