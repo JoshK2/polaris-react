@@ -188,12 +188,12 @@ Use for detail pages, which should have pagination and breadcrumbs, and also oft
   title="3/4 inch Leather pet collar"
   titleMetadata={<Badge status="success">Paid</Badge>}
   subtitle="Perfect for any pet"
-  // thumbnail={
-  //   <Thumbnail
-  //     source="https://burst.shopifycdn.com/photos/black-leather-choker-necklace_373x@2x.jpg"
-  //     alt="Black leather pet collar"
-  //   />
-  // }
+  thumbnail={
+    <Thumbnail
+      source="https://burst.shopifycdn.com/photos/black-leather-choker-necklace_373x@2x.jpg"
+      alt="Black leather pet collar"
+    />
+  }
   primaryAction={{content: 'Save', disabled: true}}
   secondaryActions={[
     {
